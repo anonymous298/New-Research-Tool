@@ -102,7 +102,7 @@ class ChatBot:
 
 
 url_path = st.text_input('Enter the URL: ', key='url')
-model_selected = st.selectbox('Select a model', ['gemma:2b', 'deepseek-r1:1.5b', 'llama3.2:3b'])
+model_selected = st.selectbox('Select a model', ['gemma:2b', 'deepseek-r1:1.5b', 'llama3.2:3b', 'qwen:4b'])
 
 if st.button('load URL'):
     InitializeSessions.initializeVectorDB(url_path)
